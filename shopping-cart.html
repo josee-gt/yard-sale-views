@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Space+Grotesk:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Shopping Car</title>
+		<style>
+			:root {
+				--very-light-pink: #a3a2a2;
+				--text-input-field: #f7f7f7;
+				--hospital-green: #acd9b2;
+				--white: #f2f2f2;
+				--black: #232830;
+				--dark: #666666;
+				--sm: 14px;
+				--md: 16px;
+				--lg: 18px;
+			}
+			body {
+				font-family: "Roboto", sans-serif;
+				font-family: "Space Grotesk", sans-serif;
+				margin: 20px 20px 0 20px;
+			}
+			.product-detail {
+				width: 360px;
+				padding: 12px;
+				position: absolute;
+				right: 0;
+				box-sizing: border-box;
+			}
+			.title {
+				font-size: var(--lg);
+				margin-bottom: 32px;
+				font-weight: bold;
+			}
+			.order {
+				display: grid;
+				grid-template-columns: auto 1fr;
+				gap: 16px;
+				align-items: center;
+				margin-bottom: 24px;
+				border-radius: 8px;
+				padding: 0 24px;
+				background-color: var(--text-input-field);
+			}
+			.order p:nth-child(1) {
+				display: flex;
+				flex-direction: column;
+				font-weight: bold;
+			}
+			.order p:nth-child(2) {
+				font-weight: bold;
+				text-align: end;
+			}
+			.order span:nth-child(2) {
+				font-weight: lighter;
+				color: var(--very-light-pink);
+			}
+			.shopping-cart {
+				display: grid;
+				grid-template-columns: auto 1fr auto auto;
+				gap: 16px;
+				place-items: center;
+				align-items: center;
+				margin-bottom: 24px;
+			}
+			.shopping-cart figure {
+				margin: 0;
+			}
+			.shopping-cart figure img {
+				width: 70px;
+				height: 70px;
+				border-radius: 20px;
+				object-fit: cover;
+			}
+			.shopping-cart p:nth-child(2) {
+				color: var(--very-light-pink);
+			}
+			.shopping-cart p:nth-child(3) {
+				font-size: var(--md);
+				font-weight: bold;
+			}
+			.primary-button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: var(--hospital-green);
+				border-radius: 8px;
+				border: none;
+				color: var(--white);
+				height: 50px;
+				width: 100%;
+				cursor: pointer;
+				font-size: var(--md);
+				font-weight: bold;
+				margin-top: 16px;
+			}
+			.title-container {
+				display: flex;
+				align-items: center;
+			}
+			.title-container img {
+				transform: rotate(180deg);
+				margin-left: 8px;
+				margin-right: 14px;
+				margin-bottom: 8px;
+				width: 8px;
+				height: 8px;
+				object-fit: cover;
+			}
+			.title-container img:hover,
+			.close-image:hover {
+				cursor: pointer;
+			}
+			.close-image {
+				border-radius: 50%; /* Hace que la imagen sea redonda */
+				box-shadow: 0px 1px 3px rgba(6, 6, 6, 0.2); /* Aplica una sombra en la parte inferior */
+			}
+
+			@media screen and (max-width: 640px) {
+				.product-detail {
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<aside class="product-detail">
+			<div class="title-container">
+				<img src="/assets/icons/flechita.svg" alt="arrow" class="arrow" />
+				<p class="title">My order</p>
+			</div>
+
+			<section class="shopping-cart">
+				<figure>
+					<img
+						src="https://images.pexels.com/photos/2146109/pexels-photo-2146109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="article"
+						width="100px"
+					/>
+				</figure>
+				<p>Florero White</p>
+				<p>$15.00</p>
+				<img
+					src="/assets/icons/icon_close.png"
+					alt="close image"
+					class="close-image"
+				/>
+			</section>
+			<section class="shopping-cart">
+				<figure>
+					<img
+						src="https://images.pexels.com/photos/2146109/pexels-photo-2146109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="article"
+						width="100px"
+					/>
+				</figure>
+				<p>Florero White</p>
+				<p>$15.00</p>
+				<img
+					src="/assets/icons/icon_close.png"
+					alt="close image"
+					class="close-image"
+				/>
+			</section>
+			<section class="shopping-cart">
+				<figure>
+					<img
+						src="https://images.pexels.com/photos/2146109/pexels-photo-2146109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="article"
+						width="100px"
+					/>
+				</figure>
+				<p>Florero White</p>
+				<p>$15.00</p>
+				<img
+					src="/assets/icons/icon_close.png"
+					alt="close image"
+					class="close-image"
+				/>
+			</section>
+			<section class="shopping-cart">
+				<figure>
+					<img
+						src="https://images.pexels.com/photos/2146109/pexels-photo-2146109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="article"
+						width="100px"
+					/>
+				</figure>
+				<p>Florero White</p>
+				<p>$15.00</p>
+				<img
+					src="/assets/icons/icon_close.png"
+					alt="close image"
+					class="close-image"
+				/>
+			</section>
+			<section class="shopping-cart">
+				<figure>
+					<img
+						src="https://images.pexels.com/photos/2146109/pexels-photo-2146109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="article"
+						width="100px"
+					/>
+				</figure>
+				<p>Florero White</p>
+				<p>$15.00</p>
+				<img
+					src="/assets/icons/icon_close.png"
+					alt="close image"
+					class="close-image"
+				/>
+			</section>
+			<section class="shopping-cart">
+				<figure>
+					<img
+						src="https://images.pexels.com/photos/2146109/pexels-photo-2146109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="article"
+						width="100px"
+					/>
+				</figure>
+				<p>Florero White</p>
+				<p>$15.00</p>
+				<img
+					src="/assets/icons/icon_close.png"
+					alt="close image"
+					class="close-image"
+				/>
+			</section>
+			<section class="shopping-cart">
+				<figure>
+					<img
+						src="https://images.pexels.com/photos/2146109/pexels-photo-2146109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="article"
+						width="100px"
+					/>
+				</figure>
+				<p>Florero White</p>
+				<p>$15.00</p>
+				<img
+					src="/assets/icons/icon_close.png"
+					alt="close image"
+					class="close-image"
+				/>
+			</section>
+			<div class="order">
+				<p>
+					<span>Total:</span>
+				</p>
+				<p>$ 560.00</p>
+			</div>
+
+			<button class="primary-button">
+				<span>Checkout</span>
+			</button>
+		</aside>
+	</body>
+</html>

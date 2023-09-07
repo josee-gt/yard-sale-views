@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Space+Grotesk:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Home</title>
+		<style>
+			:root {
+				--very-light-pink: #a3a2a2;
+				--text-input-field: #f7f7f7;
+				--hospital-green: #acd9b2;
+				--white: #f2f2f2;
+				--black: #232830;
+				--dark: #666666;
+				--sm: 14px;
+				--md: 16px;
+				--lg: 18px;
+			}
+			body {
+				font-family: "Roboto", sans-serif;
+				font-family: "Space Grotesk", sans-serif;
+				margin: 20px 20px 0 20px;
+			}
+			.desktop-menu {
+				width: 100px;
+				height: auto;
+				border: 1px solid var(--very-light-pink);
+				border-radius: 6px;
+				padding: 20px;
+			}
+			.desktop-menu ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.desktop-menu ul li {
+				text-align: end;
+			}
+			.desktop-menu ul li:last-child {
+				padding-top: 20px;
+				border-top: 1px solid var(--very-light-pink);
+			}
+			.desktop-menu ul li:last-child a {
+				color: var(--hospital-green);
+				text-decoration: none;
+
+				font-size: var(--md);
+			}
+			.desktop-menu ul li a {
+				color: var(--black);
+				text-decoration: none;
+				margin-bottom: 20px;
+				display: inline-block;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="desktop-menu">
+			<ul>
+				<li><a href="" class="title">My Orders</a></li>
+				<li><a class="title" href="/my-account.html">My account</a></li>
+				<li><a class="title" href="/login.html">Sign out</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

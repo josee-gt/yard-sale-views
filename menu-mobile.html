@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Space+Grotesk:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Menu-Mobile</title>
+		<style>
+			:root {
+				--very-light-pink: #a3a2a2;
+				--text-input-field: #f7f7f7;
+				--hospital-green: #acd9b2;
+				--white: #f2f2f2;
+				--black: #232830;
+				--dark: #666666;
+				--sm: 14px;
+				--md: 16px;
+				--lg: 18px;
+			}
+			body {
+				font-family: "Roboto", sans-serif;
+				font-family: "Space Grotesk", sans-serif;
+				margin: 20px 20px 0 20px;
+			}
+			.menu-mobile {
+				padding: 24px;
+			}
+
+			.menu-mobile a {
+				text-decoration: none;
+				color: var(--black);
+				font-weight: bold;
+			}
+			.menu-mobile ul {
+				/* padding: 0;
+                margin: 24px 0 0; */
+				list-style: none;
+			}
+
+			.menu-mobile ul li {
+				margin-bottom: 24px;
+			}
+			.menu-mobile ul li:last-child {
+				padding-bottom: 24px;
+			}
+			.categories {
+				border-bottom: 1px solid var(--very-light-pink);
+			}
+			.your-data {
+				margin-top: 50px;
+			}
+			.sign-out {
+				position: absolute;
+				bottom: 0;
+			}
+
+			.sign-out li:last-child a {
+				color: var(--hospital-green);
+				font-weight: bolder;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="menu-mobile">
+			<ul class="categories">
+				<h2>CATERGORIES</h2>
+				<li><a href="">All</a></li>
+				<li><a href="">Clothes</a></li>
+				<li><a href="">Electronics</a></li>
+				<li><a href="">Furnitures</a></li>
+				<li><a href="">Toys</a></li>
+				<li><a href="">Others</a></li>
+			</ul>
+			<ul class="your-data">
+				<li><a href="">My orders</a></li>
+				<li><a href="">My account</a></li>
+			</ul>
+			<ul class="sign-out">
+				<li><p>jose@gmail.com</p></li>
+				<li><a href="">Sign out</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

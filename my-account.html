@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Space+Grotesk:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Document</title>
+		<style>
+			:root {
+				--very-light-pink: #a3a2a2;
+				--text-input-field: #f7f7f7;
+				--hospital-green: #acd9b2;
+				--white: #f2f2f2;
+				--black: #232830;
+				--dark: #666666;
+				--sm: 14px;
+				--md: 16px;
+				--lg: 18px;
+			}
+			body {
+				font-family: "Roboto", sans-serif;
+				font-family: "Space Grotesk", sans-serif;
+				margin: 0;
+			}
+			.login {
+				width: 100%;
+				height: 100vh;
+				display: grid;
+				place-items: center;
+			}
+
+			.form-container {
+				display: grid;
+				grid-template-rows: auto 1fr auto;
+				width: 350px;
+			}
+			.logo {
+				width: 150px;
+				margin-bottom: 48px;
+				justify-self: center;
+				display: none;
+			}
+
+			.title {
+				font-size: var(--lg);
+
+				margin-bottom: 36px;
+				text-align: start;
+			}
+
+			.label {
+				font-size: var(--sm);
+				font-weight: bold;
+				margin-bottom: 4px;
+			}
+
+			.form {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.form div {
+				display: flex;
+				flex-direction: column;
+			}
+			input {
+				position: relative;
+				background-color: var(--text-input-field);
+				border: none;
+				border-radius: 8px;
+				height: 32px;
+				font-size: var(--md);
+				padding: 8px;
+				margin-top: 8px;
+				margin-bottom: 16px;
+			}
+
+			.primary-button {
+				background-color: var(--hospital-green);
+				border-radius: 8px;
+				border: none;
+				color: var(--white);
+				height: 50px;
+				width: 80%;
+				cursor: pointer;
+				font-size: var(--md);
+				font-weight: bold;
+				margin-top: 16px;
+			}
+			.login-button {
+				display: block;
+				margin: 0 auto;
+			}
+			input::placeholder {
+				position: absolute;
+				top: 18px;
+			}
+			@media screen and (max-width: 640px) {
+				.form-container {
+					height: 90%;
+				}
+				.form {
+					height: 100%;
+					justify-content: space-between;
+				}
+
+				.primary-button {
+					margin-bottom: 12px;
+				}
+			}
+		</style>
+		<title>Create your password</title>
+	</head>
+	<body>
+		<div class="login">
+			<div class="form-container">
+				<h1 class="title">My account</h1>
+				<form action="/" class="form">
+					<div>
+						<label for="name" class="label">Name</label>
+						<input
+							type="text"
+							id="name"
+							placeholder="Esparragos Vuleanos"
+							class="input"
+						/>
+						<label for="email" class="label">Email address</label>
+						<input
+							type="email"
+							id="email"
+							placeholder="prueba@gmail.com"
+							class="input input-password"
+						/>
+						<label for="password" class="label">Password</label>
+						<input
+							type="password"
+							id="password"
+							placeholder="********"
+							class="input input-password"
+						/>
+					</div>
+
+					<input
+						type="submit"
+						value="Create"
+						class="primary-button login-button"
+					/>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

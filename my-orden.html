@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Space+Grotesk:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<title>My orden</title>
+		<style>
+			:root {
+				--very-light-pink: #a3a2a2;
+				--text-input-field: #f7f7f7;
+				--hospital-green: #acd9b2;
+				--white: #f2f2f2;
+				--black: #232830;
+				--dark: #666666;
+				--sm: 14px;
+				--md: 16px;
+				--lg: 18px;
+			}
+			body {
+				font-family: "Roboto", sans-serif;
+				font-family: "Space Grotesk", sans-serif;
+				margin: 20px 20px 0 20px;
+			}
+			.my-orden {
+				width: 100%;
+				height: 100vh;
+				display: grid;
+				place-items: center;
+			}
+			.title {
+				font-size: var(--lg);
+				margin-bottom: 32px;
+			}
+			.my-order-container {
+				display: grid;
+				grid-template-rows: auto 1fr auto;
+				width: 300px;
+			}
+			.my-order-content {
+				display: flex;
+				flex-direction: column;
+			}
+			.order {
+				display: grid;
+				grid-template-columns: auto 1fr;
+				gap: 16px;
+				align-items: center;
+				margin-bottom: 24px;
+				border-radius: 8px;
+				padding: 0 24px;
+				background-color: var(--text-input-field);
+			}
+			.order p:nth-child(1) {
+				display: flex;
+				flex-direction: column;
+				font-weight: bold;
+			}
+			.order p:nth-child(2) {
+				font-weight: bold;
+				text-align: end;
+			}
+			.order span:nth-child(2) {
+				font-weight: lighter;
+				color: var(--very-light-pink);
+			}
+			.shopping-cart {
+				display: grid;
+				grid-template-columns: auto 1fr auto auto;
+				gap: 16px;
+				place-items: center;
+				align-items: center;
+				margin-bottom: 24px;
+			}
+			.shopping-cart figure {
+				margin: 0;
+			}
+			.shopping-cart figure img {
+				width: 70px;
+				height: 70px;
+				border-radius: 20px;
+				object-fit: cover;
+			}
+			.shopping-cart p:nth-child(2) {
+				color: var(--very-light-pink);
+			}
+			.shopping-cart p:nth-child(3) {
+				font-size: var(--md);
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<main class="my-orden">
+			<section class="my-order-container">
+				<h1 class="title">My order</h1>
+				<div class="my-order-content">
+					<div class="order">
+						<p>
+							<span>04-Sep-2023</span>
+							<span>6 articles</span>
+						</p>
+						<p>$ 560.00</p>
+					</div>
+					<section class="shopping-cart">
+						<figure>
+							<img
+								src="https://images.pexels.com/photos/2146109/pexels-photo-2146109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt="article"
+								width="100px"
+							/>
+						</figure>
+						<p>Florero White</p>
+						<p>$15.00</p>
+					</section>
+					<section class="shopping-cart">
+						<figure>
+							<img
+								src="https://images.pexels.com/photos/2146109/pexels-photo-2146109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt="article"
+								width="100px"
+							/>
+						</figure>
+						<p>Florero White</p>
+						<p>$15.00</p>
+					</section>
+					<section class="shopping-cart">
+						<figure>
+							<img
+								src="https://images.pexels.com/photos/2146109/pexels-photo-2146109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt="article"
+								width="100px"
+							/>
+						</figure>
+						<p>Florero White</p>
+						<p>$15.00</p>
+					</section>
+					<section class="shopping-cart">
+						<figure>
+							<img
+								src="https://images.pexels.com/photos/2146109/pexels-photo-2146109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt="article"
+								width="100px"
+							/>
+						</figure>
+						<p>Florero White</p>
+						<p>$15.00</p>
+					</section>
+					<section class="shopping-cart">
+						<figure>
+							<img
+								src="https://images.pexels.com/photos/2146109/pexels-photo-2146109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt="article"
+								width="100px"
+							/>
+						</figure>
+						<p>Florero White</p>
+						<p>$15.00</p>
+					</section>
+					<section class="shopping-cart">
+						<figure>
+							<img
+								src="https://images.pexels.com/photos/2146109/pexels-photo-2146109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt="article"
+								width="100px"
+							/>
+						</figure>
+						<p>Florero White</p>
+						<p>$15.00</p>
+					</section>
+					<section class="shopping-cart">
+						<figure>
+							<img
+								src="https://images.pexels.com/photos/2146109/pexels-photo-2146109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt="article"
+								width="100px"
+							/>
+						</figure>
+						<p>Florero White</p>
+						<p>$15.00</p>
+					</section>
+					<section class="shopping-cart">
+						<figure>
+							<img
+								src="https://images.pexels.com/photos/2146109/pexels-photo-2146109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt="article"
+								width="100px"
+							/>
+						</figure>
+						<p>Florero White</p>
+						<p>$15.00</p>
+					</section>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
